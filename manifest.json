@@ -1,0 +1,19 @@
+{
+    "name": "Mobile Facebook Downloader",
+    "version": "1",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.facebook.com/*",
+                "https://facebook.com/*"
+            ],
+            "js": [
+                "contentscript.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}
